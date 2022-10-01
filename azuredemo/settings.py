@@ -26,7 +26,7 @@ SECRET_KEY = 'django-insecure-e7w(5hwf4(x200a&k8bj*ieh=5ky$wz9mcw$cxt&b*6)+$n!@0
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['https://demoazureapplication123.azurewebsites.net']
 
 
 # Application definition
@@ -83,10 +83,10 @@ WSGI_APPLICATION = 'azuredemo.wsgi.application'
 DATABASES = {
      'default': {
          'ENGINE': 'sql_server.pyodbc',
-         'NAME': 'azuresqldemo',
-         'USER': 'sqladmin@demoazuresqlserver123',
-         'PASSWORD': 'Trial123',
-         'HOST': 'demoazuresqlserver123.database.windows.net',
+         'NAME': 'demosql',
+         'USER': 'userroot@demoazuresqlserver123',
+         'PASSWORD': 'trial@123',
+         'HOST': 'demoserverazure123.database.windows.net',
          'PORT': '1433',
          'OPTIONS' : {
                 'driver': '{ODBC Driver 13 for SQL Server}',
@@ -134,7 +134,7 @@ USE_TZ = True
 STATICFILES_STORAGE = 'azuredemo.custom_azure.AzureStaticStorage'
 STATIC_LOCATION = "static"
 
-AZURE_ACCOUNT_NAME = "azuredemoblob123"
+AZURE_ACCOUNT_NAME = "shubhig99"
 AZURE_CUSTOM_DOMAIN = f'{AZURE_ACCOUNT_NAME}.blob.core.windows.net'
 STATIC_URL = f'https://{AZURE_CUSTOM_DOMAIN}/{STATIC_LOCATION}/'
 
