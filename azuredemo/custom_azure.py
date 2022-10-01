@@ -7,7 +7,7 @@ from storages.backends.azure_storage import AzureStorage
 #     expiration_secs = None
 
 class AzureStaticStorage(AzureStorage):
-    account_name = 'azuredemoblob123' # Must be replaced by your storage_account_name
-    account_key = 'kw9gMcBjYSyKZ/C4pSEhrytMAUHoMVaNxJw50xfPJqVDWl7QmogmrI0Akz9UYW6+KGRA3mvnzaHu+AStJ86Kgw==' # Must be replaced by your <storage_account_key>
+    account_name = 'shubhig99' # Must be replaced by your storage_account_name
+    account_key = 'Bj29elKMVoe9otSj3meV+H+Kd61gCyeRyicLsm36KXgewl6YdMSI61X+l+R0LcDP9uw7u94Jl9kb+AStzTjBGA==' # Must be replaced by your <storage_account_key>
     azure_container = 'static'
     expiration_secs = None
